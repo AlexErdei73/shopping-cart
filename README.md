@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Shopping-Cart
+
+This is the third react project in the odin project curriculum. The project works like a shopping website,
+but real purchase is not implemented. More information can be found on the [original project description](https://www.theodinproject.com/lessons/shopping-chart).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
