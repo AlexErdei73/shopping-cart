@@ -9,7 +9,7 @@ import TitleBar from "./components/titlebar";
 function App() {
   return (
     <BrowserRouter>
-      <TitleBar />
+      <TitleBar cartItemsCount="9" />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/shopping" exact component={Shopping} />

@@ -1,7 +1,8 @@
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
 
-const TitleBar = () => {
+const TitleBar = (props) => {
   return (
     <Navbar bg="info" variant="dark" fixed="top">
       <Navbar.Brand as={Link} to="/">
@@ -20,7 +21,8 @@ const TitleBar = () => {
         </Nav.Item>
         <Nav.Item>
           <Link to="/cart" className="nav-link">
-            Cart
+            <FiShoppingCart />{" "}
+            <Badge variant="secondary">{props.cartItemsCount}</Badge>
           </Link>
         </Nav.Item>
       </Nav>
