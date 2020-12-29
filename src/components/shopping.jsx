@@ -1,7 +1,21 @@
-const Shopping = () => {
+import PictureCard from "./pictureCard";
+
+const Shopping = (props) => {
+  const { items } = props;
   return (
-    <div className="pt-5">
-      <h1>Hello from Shopping</h1>
+    <div className="pt-5 bg-secondary">
+      <div className="row">
+        {items.map((item, index) => {
+          return (
+            <PictureCard
+              content={item}
+              key={index}
+              id={index}
+              onButtonClick={(id) => {}}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
