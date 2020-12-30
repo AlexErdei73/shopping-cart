@@ -104,6 +104,14 @@ function App() {
     return counter;
   }
 
+  function buttonText(id) {
+    if (state[id].numberPurchased > 0) {
+      return "Remove";
+    } else {
+      return "Buy Me!";
+    }
+  }
+
   return (
     <BrowserRouter>
       <TitleBar cartItemsCount={itemsInCart()} />
@@ -118,6 +126,7 @@ function App() {
               onButtonClick={(id, numberPurchased) =>
                 handleClick(id, numberPurchased)
               }
+              buttonText={(id) => buttonText(id)}
             />
           )}
         />

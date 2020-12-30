@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 const PictureCard = (props) => {
-  const { content, id, onButtonClick } = props;
+  const { content, id, onButtonClick, buttonText } = props;
   const { unitPrice, image } = content;
 
   let numberPurchased = 1;
@@ -31,7 +31,7 @@ const PictureCard = (props) => {
               variant="primary"
               onClick={() => onButtonClick(id, numberPurchased)}
             >
-              Buy Me!
+              {buttonText(id)}
             </Button>
           </div>
         </Card.Body>
