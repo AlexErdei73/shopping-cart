@@ -88,8 +88,12 @@ function App() {
   const handleClick = (id, numberPurchased) => {
     const newState = [...state];
     const newBook = { ...newState[id] };
-    if (!numberPurchased) return;
-    newBook.numberPurchased = numberPurchased;
+    if (newBook.numberPurchased > 0) {
+      newBook.numberPurchased = 0;
+    } else {
+      if (!numberPurchased) return;
+      newBook.numberPurchased = numberPurchased;
+    }
     newState[id] = newBook;
     setState(newState);
   };
