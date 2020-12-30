@@ -134,7 +134,7 @@ function App() {
             />
           )}
         />
-        <Route path="/cart" exact component={Cart} />
+        <Route path="/cart" exact render={() => <Cart items={state} />} />
       </Switch>
     </BrowserRouter>
   );
