@@ -1,7 +1,7 @@
 import PictureCard from "./pictureCard";
 
 const Shopping = (props) => {
-  const { items } = props;
+  const { items, onButtonClick } = props;
   return (
     <div className="pt-5 bg-secondary">
       <div className="row">
@@ -11,7 +11,9 @@ const Shopping = (props) => {
               content={item}
               key={index}
               id={index}
-              onButtonClick={(id) => {}}
+              onButtonClick={(id, numberPurchased) =>
+                onButtonClick(id, numberPurchased)
+              }
             />
           );
         })}

@@ -27,6 +27,14 @@ function App() {
     },
     {
       id: 2,
+      author: "John R. Taylor",
+      title: "Classical Mechanics",
+      image: "./images/taylor.jpeg",
+      unitPrice: 61.99,
+      numberPurchased: 0,
+    },
+    {
+      id: 3,
       author: "David J. Griffiths",
       title: "Introduction to electrodynamics",
       image: "./images/griffithsed.jpeg",
@@ -34,7 +42,7 @@ function App() {
       numberPurchased: 0,
     },
     {
-      id: 3,
+      id: 4,
       author: "David J. Griffiths",
       title: "Introduction to quantum mechanics",
       image: "./images/griffithsqm.jpeg",
@@ -43,37 +51,48 @@ function App() {
     },
     {
       id: 0,
-      author: "Richard Feynman",
-      title: "The Feynman lectures on physics",
-      image: "./images/feynman.jpeg",
-      unitPrice: 111.99,
+      author: "David J. Griffiths",
+      title: "Introduction to elementary particles",
+      image: "./images/griffithsiep.jpeg",
+      unitPrice: 55.01,
       numberPurchased: 0,
     },
     {
       id: 0,
-      author: "Richard Feynman",
-      title: "The Feynman lectures on physics",
-      image: "./images/feynman.jpeg",
-      unitPrice: 111.99,
+      author: "Frederich Reif",
+      title: "Fundamentals of statistical and thermal physics",
+      image: "./images/reif.jpeg",
+      unitPrice: 57.89,
       numberPurchased: 0,
     },
     {
       id: 0,
-      author: "Richard Feynman",
-      title: "The Feynman lectures on physics",
-      image: "./images/feynman.jpeg",
-      unitPrice: 111.99,
+      author: "Robert J. A. Lambourne",
+      title: "Relativity, Gravitation and Cosmology",
+      image: "./images/lambourne.jpeg",
+      unitPrice: 47.31,
       numberPurchased: 0,
     },
     {
       id: 0,
-      author: "Richard Feynman",
-      title: "The Feynman lectures on physics",
-      image: "./images/feynman.jpeg",
-      unitPrice: 111.99,
+      author: "Robert D. Klauber",
+      title: "Student friendly quantum field theory",
+      image: "./images/klauber.jpeg",
+      unitPrice: 62.97,
       numberPurchased: 0,
     },
   ];
+
+  const [state, setState] = useState(physicBooks);
+
+  const handleClick = (id, numberPurchased) => {
+    const newState = [...state];
+    const newBook = { ...newState[id] };
+    if (!numberPurchased) return;
+    newBook.numberPurchased = numberPurchased;
+    newState[id] = newBook;
+    setState(newState);
+  };
 
   return (
     <BrowserRouter>
@@ -83,7 +102,14 @@ function App() {
         <Route
           path="/shopping"
           exact
-          render={() => <Shopping items={physicBooks} />}
+          render={() => (
+            <Shopping
+              items={physicBooks}
+              onButtonClick={(id, numberPurchased) =>
+                handleClick(id, numberPurchased)
+              }
+            />
+          )}
         />
         <Route path="/cart" exact component={Cart} />
       </Switch>
