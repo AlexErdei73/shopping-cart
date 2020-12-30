@@ -94,9 +94,19 @@ function App() {
     setState(newState);
   };
 
+  function itemsInCart() {
+    let counter = 0;
+    state.forEach((item) => {
+      if (item.numberPurchased > 0) {
+        counter += item.numberPurchased;
+      }
+    });
+    return counter;
+  }
+
   return (
     <BrowserRouter>
-      <TitleBar cartItemsCount="9" />
+      <TitleBar cartItemsCount={itemsInCart()} />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route
