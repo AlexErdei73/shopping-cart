@@ -1,9 +1,19 @@
+import boasPic from "./images/boas.jpeg";
+import feynmanPic from "./images/feynman.jpeg";
+import taylorPic from "./images/taylor.jpeg";
+import griffithsEdPic from "./images/griffithsed.jpeg";
+import griffithsQmPic from "./images/griffithsqm.jpeg";
+import griffithsIepPic from "./images/griffithsiep.jpeg";
+import reifPic from "./images/reif.jpeg";
+import klauberPic from "./images/klauber.jpeg";
+import lambournePic from "./images/lambourne.jpeg";
+
 export const physicBooks = [
   {
     id: 0,
     author: "Mary L. Boas",
     title: "Mathematical methodes for the physical sciences",
-    image: "./images/boas.jpeg",
+    image: boasPic,
     unitPrice: 65.0,
     numberPurchased: 0,
   },
@@ -11,7 +21,7 @@ export const physicBooks = [
     id: 1,
     author: "Richard Feynman",
     title: "The Feynman lectures on physics",
-    image: "./images/feynman.jpeg",
+    image: feynmanPic,
     unitPrice: 111.99,
     numberPurchased: 0,
   },
@@ -19,7 +29,7 @@ export const physicBooks = [
     id: 2,
     author: "John R. Taylor",
     title: "Classical Mechanics",
-    image: "./images/taylor.jpeg",
+    image: taylorPic,
     unitPrice: 61.99,
     numberPurchased: 0,
   },
@@ -27,7 +37,7 @@ export const physicBooks = [
     id: 3,
     author: "David J. Griffiths",
     title: "Introduction to electrodynamics",
-    image: "./images/griffithsed.jpeg",
+    image: griffithsEdPic,
     unitPrice: 48.92,
     numberPurchased: 0,
   },
@@ -35,40 +45,40 @@ export const physicBooks = [
     id: 4,
     author: "David J. Griffiths",
     title: "Introduction to quantum mechanics",
-    image: "./images/griffithsqm.jpeg",
+    image: griffithsQmPic,
     unitPrice: 48.92,
     numberPurchased: 0,
   },
   {
-    id: 0,
+    id: 5,
     author: "David J. Griffiths",
     title: "Introduction to elementary particles",
-    image: "./images/griffithsiep.jpeg",
+    image: griffithsIepPic,
     unitPrice: 55.01,
     numberPurchased: 0,
   },
   {
-    id: 0,
+    id: 6,
+    author: "Robert D. Klauber",
+    title: "Student friendly quantum field theory",
+    image: klauberPic,
+    unitPrice: 62.97,
+    numberPurchased: 0,
+  },
+  {
+    id: 7,
     author: "Frederich Reif",
     title: "Fundamentals of statistical and thermal physics",
-    image: "./images/reif.jpeg",
+    image: reifPic,
     unitPrice: 57.89,
     numberPurchased: 0,
   },
   {
-    id: 0,
+    id: 8,
     author: "Robert J. A. Lambourne",
     title: "Relativity, Gravitation and Cosmology",
-    image: "./images/lambourne.jpeg",
+    image: lambournePic,
     unitPrice: 47.31,
-    numberPurchased: 0,
-  },
-  {
-    id: 0,
-    author: "Robert D. Klauber",
-    title: "Student friendly quantum field theory",
-    image: "./images/klauber.jpeg",
-    unitPrice: 62.97,
     numberPurchased: 0,
   },
 ];
@@ -91,10 +101,10 @@ export function buttonText(id, state) {
   }
 }
 
-export function tableLine(book) {
+export function tableLine(book, id) {
   const { author, title, unitPrice, numberPurchased } = book;
   return (
-    <tr>
+    <tr key={id}>
       <th>{author}</th>
       <th>{title}</th>
       <th>{unitPrice}</th>

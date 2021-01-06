@@ -22,12 +22,12 @@ const Cart = (props) => {
             </tr>
           </thead>
           <tbody>
-            {items.map((item) => {
-              if (!item.numberPurchased) return <tr></tr>;
-              return tableLine(item);
+            {items.map((item, index) => {
+              if (!item.numberPurchased) return <tr key={index}></tr>;
+              return tableLine(item, index);
             })}
-            <tr>
-              <tr></tr>
+            <tr key="9">
+              <th></th>
               <th></th>
               <th></th>
               <th></th>

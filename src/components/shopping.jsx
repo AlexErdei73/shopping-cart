@@ -8,8 +8,8 @@ const Shopping = (props) => {
         {items.map((item, index) => {
           return (
             <PictureCard
-              content={item}
               key={index}
+              content={item}
               id={index}
               onButtonClick={(id, numberPurchased) =>
                 onButtonClick(id, numberPurchased)

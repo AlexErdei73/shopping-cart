@@ -1,3 +1,11 @@
+import mathPic from "../images/math.webp";
+import classicalMechanicsPic from "../images/classicalmechanics.jpeg";
+import electrodynamicsPic from "../images/electrodynamics.jpeg";
+import quantumPic from "../images/quantum.jpeg";
+import particlePic from "../images/particle.jpeg";
+import thermodynamicsPic from "../images/thermodynamics.webp";
+import blackholePic from "../images/blackhole.webp";
+
 const Home = () => {
   return (
     <div>
@@ -8,7 +16,7 @@ const Home = () => {
         <div className="col-4 mt-5">
           <img
             className="m-2"
-            src="./images/math.webp"
+            src={mathPic}
             alt="math on blackboard"
             width="100%"
           />
@@ -65,7 +73,7 @@ const Home = () => {
         <div className="col-4">
           <img
             className="m-2"
-            src="./images/classicalmechanics.jpeg"
+            src={classicalMechanicsPic}
             alt="the Earth and the Moon in space"
             width="100%"
           />
@@ -99,7 +107,7 @@ const Home = () => {
         <div className="col-4">
           <img
             className="m-2"
-            src="./images/electrodynamics.jpeg"
+            src={electrodynamicsPic}
             alt="electrical discharge on the coil of a Tesla-transformer"
             width="100%"
           />
@@ -124,7 +132,7 @@ const Home = () => {
         <div className="col-4">
           <img
             className="m-2"
-            src="./images/quantum.jpeg"
+            src={quantumPic}
             alt="quantum corral made by STM"
             width="100%"
           />
@@ -154,7 +162,7 @@ const Home = () => {
         <div className="col-4">
           <img
             className="m-2"
-            src="./images/particle.jpeg"
+            src={particlePic}
             alt="inside the tunnel of LHC"
             width="100%"
           />
@@ -190,7 +198,7 @@ const Home = () => {
         <div className="col-4">
           <img
             className="m-2"
-            src="./images/thermodynamics.webp"
+            src={thermodynamicsPic}
             alt="match is getting flamed"
             width="100%"
           />
@@ -227,7 +235,7 @@ const Home = () => {
         <div className="col-4">
           <img
             className="m-2"
-            src="./images/blackhole.webp"
+            src={blackholePic}
             alt="black hole visualisations"
             width="100%"
           />
