@@ -26,7 +26,11 @@ const Cart = (props) => {
               if (!item.numberPurchased) return <tr key={index}></tr>;
               return tableLine(item, index);
             })}
+<<<<<<< HEAD
             <tr key={items.length}>
+=======
+            <tr key="9">
+>>>>>>> c4b4f69cbd7b14a4081497363c6a3479da096809
               <th></th>
               <th></th>
               <th></th>
