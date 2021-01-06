@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.afd7172b.chunk.css",
-    "main.js": "/shopping-cart/static/js/main.cf1304fe.chunk.js",
-    "main.js.map": "/shopping-cart/static/js/main.cf1304fe.chunk.js.map",
+    "main.js": "/shopping-cart/static/js/main.1ec0440d.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.1ec0440d.chunk.js.map",
     "runtime-main.js": "/shopping-cart/static/js/runtime-main.b56c1ee8.js",
     "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.b56c1ee8.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/shopping-cart/static/css/2.ae9f1eb3.chunk.css",
@@ -11,13 +11,25 @@
     "index.html": "/shopping-cart/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/shopping-cart/static/css/2.ae9f1eb3.chunk.css.map",
     "static/css/main.afd7172b.chunk.css.map": "/shopping-cart/static/css/main.afd7172b.chunk.css.map",
-    "static/js/2.3a0c7ac6.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.3a0c7ac6.chunk.js.LICENSE.txt"
+    "static/js/2.3a0c7ac6.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.3a0c7ac6.chunk.js.LICENSE.txt",
+    "static/media/blackhole.847d60ae.webp": "/shopping-cart/static/media/blackhole.847d60ae.webp",
+    "static/media/boas.b08a50df.jpeg": "/shopping-cart/static/media/boas.b08a50df.jpeg",
+    "static/media/classicalmechanics.090a1a45.jpeg": "/shopping-cart/static/media/classicalmechanics.090a1a45.jpeg",
+    "static/media/griffithsed.78479630.jpeg": "/shopping-cart/static/media/griffithsed.78479630.jpeg",
+    "static/media/klauber.c284edcf.jpeg": "/shopping-cart/static/media/klauber.c284edcf.jpeg",
+    "static/media/lambourne.da49abeb.jpeg": "/shopping-cart/static/media/lambourne.da49abeb.jpeg",
+    "static/media/math.7fd3e7f5.webp": "/shopping-cart/static/media/math.7fd3e7f5.webp",
+    "static/media/particle.b0e45b11.jpeg": "/shopping-cart/static/media/particle.b0e45b11.jpeg",
+    "static/media/quantum.8b3310a1.jpeg": "/shopping-cart/static/media/quantum.8b3310a1.jpeg",
+    "static/media/reif.5b66f674.jpeg": "/shopping-cart/static/media/reif.5b66f674.jpeg",
+    "static/media/taylor.59259a68.jpeg": "/shopping-cart/static/media/taylor.59259a68.jpeg",
+    "static/media/thermodynamics.aadd281a.webp": "/shopping-cart/static/media/thermodynamics.aadd281a.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.b56c1ee8.js",
     "static/css/2.ae9f1eb3.chunk.css",
     "static/js/2.3a0c7ac6.chunk.js",
     "static/css/main.afd7172b.chunk.css",
-    "static/js/main.cf1304fe.chunk.js"
+    "static/js/main.1ec0440d.chunk.js"
   ]
 }
