@@ -1,32 +1,11 @@
-import { Table, Button } from "react-bootstrap";
-
-function tableLine(book) {
-  const { author, title, unitPrice, numberPurchased } = book;
-  return (
-    <tr>
-      <th>{author}</th>
-      <th>{title}</th>
-      <th>{unitPrice}</th>
-      <th>{numberPurchased}</th>
-      <th>{totalPrice(book)}</th>
-    </tr>
-  );
-}
-
-function totalPrice(item) {
-  return item.unitPrice * item.numberPurchased;
-}
-
-function payable(items) {
-  let payable = 0;
-  items.forEach((item) => {
-    payable += totalPrice(item);
-  });
-  return payable;
-}
+import { Table, Button, Modal } from "react-bootstrap";
+import React, { useState } from "react";
+import { tableLine, payable } from "../helper";
 
 const Cart = (props) => {
   const { items } = props;
+
+  const [show, setShow] = useState(false);
 
   return (
     <div className="pt-5 mt-5 row">
@@ -60,8 +39,24 @@ const Cart = (props) => {
       </div>
       <div className="col-6"></div>
       <div className="col-6">
-        <Button variant="primary">Pay Now</Button>
+        <Button variant="primary" onClick={() => setShow(true)}>
+          Pay Now
+        </Button>
       </div>
+      <Modal show={show} onHide={() => setShow(false)}>
+        <Modal.Title className="bg-info text-light">
+          Thank you for shopping!
+        </Modal.Title>
+        <Modal.Body>
+          This function has not been implemented yet, because the app is only
+          for demonstration purposes.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={() => setShow(false)}>
+            OK
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

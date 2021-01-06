@@ -19,7 +19,15 @@ const Home = () => {
             You need to know physics on the secondary school level well. You
             also need to know your math well on secondary school level. You need
             to know calculus of one and multi variable functions to start
-            learning from these books.
+            learning from these books. It is also beneficial to watch
+            experimental physics lessons at least online like
+            <a
+              className="pl-1"
+              href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw"
+            >
+              Walter Lewin's lectures
+            </a>
+            .
           </p>
           <h2>Mathematical Methodes in the Physiscal Sciences</h2>
           <p>
@@ -58,7 +66,7 @@ const Home = () => {
           <img
             className="m-2"
             src="./images/classicalmechanics.jpeg"
-            alt="math on blackboard"
+            alt="the Earth and the Moon in space"
             width="100%"
           />
         </div>
@@ -92,7 +100,7 @@ const Home = () => {
           <img
             className="m-2"
             src="./images/electrodynamics.jpeg"
-            alt="math on blackboard"
+            alt="electrical discharge on the coil of a Tesla-transformer"
             width="100%"
           />
         </div>
@@ -117,7 +125,7 @@ const Home = () => {
           <img
             className="m-2"
             src="./images/quantum.jpeg"
-            alt="math on blackboard"
+            alt="quantum corral made by STM"
             width="100%"
           />
         </div>
@@ -147,7 +155,7 @@ const Home = () => {
           <img
             className="m-2"
             src="./images/particle.jpeg"
-            alt="math on blackboard"
+            alt="inside the tunnel of LHC"
             width="100%"
           />
         </div>
@@ -183,7 +191,7 @@ const Home = () => {
           <img
             className="m-2"
             src="./images/thermodynamics.webp"
-            alt="math on blackboard"
+            alt="match is getting flamed"
             width="100%"
           />
         </div>
@@ -220,7 +228,7 @@ const Home = () => {
           <img
             className="m-2"
             src="./images/blackhole.webp"
-            alt="math on blackboard"
+            alt="black hole visualisations"
             width="100%"
           />
         </div>
