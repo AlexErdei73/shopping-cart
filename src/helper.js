@@ -109,13 +109,13 @@ export function tableLine(book, id) {
       <th>{title}</th>
       <th>{unitPrice}</th>
       <th>{numberPurchased}</th>
-      <th>{totalPrice(book)}</th>
+      <th>{roundToPennies(totalPrice(book))}</th>
     </tr>
   );
 }
 
 function totalPrice(item) {
-  return roundToPennies(item.unitPrice * item.numberPurchased);
+  return item.unitPrice * item.numberPurchased;
 }
 
 export function payable(items) {
@@ -127,5 +127,5 @@ export function payable(items) {
 }
 
 function roundToPennies(value) {
-  return Math.round(100 * value) / 100;
+  return (Math.round(100 * value) / 100).toFixed(2);
 }
