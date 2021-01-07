@@ -28,7 +28,6 @@ function App() {
     <BrowserRouter>
       <TitleBar cartItemsCount={itemsInCart(state)} />
       <Switch>
-        <Route path="/" exact component={Home} />
         <Route
           path="/shopping"
           exact
@@ -43,6 +42,7 @@ function App() {
           )}
         />
         <Route path="/cart" exact render={() => <Cart items={state} />} />
+        <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   );
